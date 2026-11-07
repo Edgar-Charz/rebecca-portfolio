@@ -6,9 +6,9 @@ const themeColor = document.querySelector('meta[name="theme-color"]');
 function setTheme(theme) {
   document.documentElement.dataset.theme = theme;
   const isDark = theme === "dark";
-  themeToggle.setAttribute("aria-label", `Switch to ${isDark ? "light" : "dark"} mode`);
-  themeToggle.setAttribute("title", `Switch to ${isDark ? "light" : "dark"} mode`);
-  themeColor.setAttribute("content", isDark ? "#201a20" : "#fff8f8");
+  themeToggle.setAttribute("aria-label", `Switch to ${isDark ? "light" : "rose"} theme`);
+  themeToggle.setAttribute("title", `Switch to ${isDark ? "light" : "rose"} theme`);
+  themeColor.setAttribute("content", isDark ? "#fff0f3" : "#fff8f8");
   try {
     localStorage.setItem("rebecca-portfolio-theme", theme);
   } catch (error) {}
