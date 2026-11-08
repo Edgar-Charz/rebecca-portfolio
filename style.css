@@ -1440,44 +1440,55 @@ html[data-theme="light"] .contact-inner .button-light:hover {
 
 @media screen {
   html[data-theme] .resume-page .cv-paper {
-    border-color: #e4d8dc;
-    background: #f3eff0;
-    color: #4b303b;
+    border-color: #c47f99;
+    background: #d99ab2;
+    color: #512b3b;
     box-shadow: none;
   }
-  html[data-theme] .resume-page .cv-header { background: linear-gradient(115deg, #f3e8ec, #eee5e8 72%); }
-  html[data-theme] .resume-page .cv-sidebar { background: linear-gradient(155deg, #f4edf0, #f0e9ec); }
-  html[data-theme] .resume-page .cv-main { background: linear-gradient(135deg, #f6f1f3, #f3eff0 70%); }
-  html[data-theme] .resume-page .cv-entry {
-    border-color: #e1d7da;
-    background: linear-gradient(125deg, #f5eff1, #f1ecee);
-    color: #4b303b;
-    box-shadow: none;
+  html[data-theme] .resume-page .cv-header {
+    background: linear-gradient(115deg, #dfa7bb, #d99ab2 72%);
+  }
+  html[data-theme] .resume-page .cv-sidebar {
+    background: linear-gradient(155deg, #dda3b8, #d696af);
+  }
+  html[data-theme] .resume-page .cv-main {
+    background: linear-gradient(135deg, #d99ab2, #d596ad 70%);
   }
   html[data-theme] .resume-page .cv-header h2,
+  html[data-theme] .resume-page .cv-header .cv-summary,
+  html[data-theme] .resume-page .cv-header .cv-contact { color: #512b3b; }
+  html[data-theme] .resume-page .cv-header .cv-overline,
+  html[data-theme] .resume-page .cv-header h2 em { color: #783650; }
+  html[data-theme] .resume-page .cv-entry {
+    border-color: #cb8da5;
+    background: linear-gradient(125deg, #e1acc0, #dda3b9);
+    color: #512b3b;
+    box-shadow: none;
+  }
   html[data-theme] .resume-page .cv-entry-heading h4,
-  html[data-theme] .resume-page .cv-section > h3,
-  html[data-theme] .resume-page .cv-tool-group h4,
-  html[data-theme] .resume-page .cv-language strong { color: #4b303b; }
-  html[data-theme] .resume-page .cv-header h2 em,
-  html[data-theme] .resume-page .cv-overline,
-  html[data-theme] .resume-page .cv-entry-heading time,
-  html[data-theme] .resume-page .cv-section > h3 > span,
-  html[data-theme] .resume-page .cv-entry-heading p span,
-  html[data-theme] .resume-page .cv-footer > span:first-child,
-  html[data-theme] .resume-page .cv-footer i { color: #8d6675; }
-  html[data-theme] .resume-page .cv-summary,
-  html[data-theme] .resume-page .cv-contact,
   html[data-theme] .resume-page .cv-entry-heading p,
-  html[data-theme] .resume-page .cv-entry ul,
+  html[data-theme] .resume-page .cv-entry-heading p span,
+  html[data-theme] .resume-page .cv-entry-heading time,
+  html[data-theme] .resume-page .cv-entry ul { color: #512b3b; }
+  html[data-theme] .resume-page .cv-main .cv-section > h3 { color: #512b3b; }
+  html[data-theme] .resume-page .cv-main .cv-section > h3 > span,
+  html[data-theme] .resume-page .cv-footer > span:first-child,
+  html[data-theme] .resume-page .cv-footer i { color: #783650; }
+  html[data-theme] .resume-page .cv-sidebar .cv-section > h3,
+  html[data-theme] .resume-page .cv-tool-group h4,
+  html[data-theme] .resume-page .cv-language strong { color: #512b3b; }
+  html[data-theme] .resume-page .cv-sidebar .cv-section > h3 > span { color: #783650; }
   html[data-theme] .resume-page .cv-skill-list,
   html[data-theme] .resume-page .cv-tool-group p,
-  html[data-theme] .resume-page .cv-language span,
-  html[data-theme] .resume-page .cv-footer { color: #705563; }
-  html[data-theme] .resume-page .cv-entry,
+  html[data-theme] .resume-page .cv-language span { color: #684253; }
+  html[data-theme] .resume-page .cv-footer { color: #684253; }
+  html[data-theme] .resume-page .cv-contact a:hover { color: #351c28; }
   html[data-theme] .resume-page .cv-section + .cv-section,
-  html[data-theme] .resume-page .cv-footer { border-color: #e2d6db; }
-  html[data-theme] .resume-page .cv-photo { border-color: #f7f3f4; outline-color: #cab7bf; }
+  html[data-theme] .resume-page .cv-footer { border-color: #c47f99; }
+  html[data-theme] .resume-page .cv-entry { border-color: #cb8da5; }
+  html[data-theme] .resume-page .cv-language { border-color: #c3829c; }
+  html[data-theme] .resume-page .cv-skill-list li::before { background: #783650; }
+  html[data-theme] .resume-page .cv-photo { border-color: #f7e8ee; outline-color: #a64c70; }
 }
 
 @media screen {
@@ -1527,3 +1538,48 @@ html[data-theme="light"] .contact-inner .button-light:hover {
     box-shadow: none !important;
   }
 }
+
+html[data-theme] .contact-section {
+  min-height: 675px;
+  padding-block: 70px;
+  background: linear-gradient(155deg, #9a315f 0%, #861c4d 48%, #74163e 100%);
+  color: #fff5f8;
+}
+html[data-theme] .contact-inner {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+html[data-theme] .contact-inner .section-label,
+html[data-theme] .contact-inner > p { color: #f0cbd9; }
+html[data-theme] .contact-inner .section-label span,
+html[data-theme] .contact-inner h2 { color: #fff5f8; }
+html[data-theme] .contact-inner h2 em,
+html[data-theme] .contact-flower { color: #ffb6cc; }
+html[data-theme] .contact-links { color: #f0cbd9; }
+html[data-theme] .contact-links a:hover,
+html[data-theme] .contact-links a span { color: #ffb6cc; }
+html[data-theme] .contact-socials a {
+  border-color: rgba(255, 218, 230, .55);
+  color: #fff0f5;
+}
+html[data-theme] .contact-socials a:hover {
+  border-color: #ffb6cc;
+  background: rgba(255, 182, 204, .16);
+  color: #fff;
+}
+html[data-theme] .contact-socials a:focus-visible { outline-color: #ffb6cc; }
+html[data-theme] .contact-inner .button-light {
+  background: #ff91b6;
+  color: #4b2035;
+}
+html[data-theme] .contact-inner .button-light:hover {
+  background: #ffb6cc;
+  color: #4b2035;
+}
+@media (max-width: 640px) {
+  html[data-theme] .contact-section { min-height: 0; padding-block: 48px; }
+}
+html[data-theme] .hero { background: transparent; }
